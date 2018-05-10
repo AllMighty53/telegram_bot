@@ -1,5 +1,9 @@
 #!/Users/idanso/miniconda3/bin/python ## make sure your path to python3 is right 
 
+## in this example there are two commands one is "start" ans one is "command" you can replace that with anything just make
+## sure the handler and the function have the same name 
+
+
 import os
 from telegram.ext import Updater ## make sure to install telegram lib using "pip install python-telegram-bot --upgrade"
 from telegram.ext import CommandHandler
