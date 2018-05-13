@@ -1,7 +1,7 @@
-#!/Users/idanso/miniconda3/bin/python ## make sure your path to python3 is right 
+#!/Users/idanso/miniconda3/bin/python ## make sure your path to python3 is right
 
 ## in this example there are two commands one is "start" ans one is "command" you can replace that with anything just make
-## sure the handler and the function have the same name 
+## sure the handler and the function have the same name
 
 
 import os
@@ -14,7 +14,7 @@ def start(bot, update):
 
 
 def command(bot, update):
-    var1 = os.popen('whoami').read() ## any command you want 
+    var1 = os.popen('whoami').read() ## any command you want
     var = "you are: "+ var1
     bot.send_message(chat_id=update.message.chat_id, text=var1)
 
@@ -31,3 +31,4 @@ def starthandling():
 if __name__=='__main__':
     key = input("Input Your Telegram Token: ")
     starthandling()
+    ## test
